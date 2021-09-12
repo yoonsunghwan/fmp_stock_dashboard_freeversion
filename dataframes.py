@@ -1,10 +1,10 @@
 import pandas as pd
 import fmpsdk
-import configparser
+import streamlit as st
 
-config = configparser.ConfigParser()
-config.read('ak.cfg')
-fmp_key = config.get('access_key','FMP_ACCESS_KEY')
+#config = configparser.ConfigParser()
+#config.read('ak.cfg')
+fmp_key = st.secrets['fmp_key']
 symbol = 'aapl'
 
 
