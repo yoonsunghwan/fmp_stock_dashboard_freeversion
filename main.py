@@ -79,10 +79,10 @@ if option == 'Screener':
     exchange = screener.exchange
 
     #create containers for columns
-    r1_c1, r1_c2, r1_c3 = st.beta_columns((1,1.5,1.5))
-    r2_c1, r2_c2, r2_c3 = st.beta_columns((1,1.5,1.5))
-    r3_c1, r3_c2, r3_c3 = st.beta_columns((1,1.5,1.5))
-    r4_c1, r4_c2, r4_c3 = st.beta_columns((1,1.5,1.5))
+    r1_c1, r1_c2, r1_c3 = st.columns((1,1.5,1.5))
+    r2_c1, r2_c2, r2_c3 = st.columns((1,1.5,1.5))
+    r3_c1, r3_c2, r3_c3 = st.columns((1,1.5,1.5))
+    r4_c1, r4_c2, r4_c3 = st.columns((1,1.5,1.5))
 
     #row 1 cols 1,2,3
     exchange_value = r1_c1.multiselect('Exchange',exchange, ['NYSE','NASDAQ'])
@@ -126,7 +126,7 @@ if option == 'Historical':
     st.plotly_chart(plotly_graphs.daily_graph(daily_df ,symbol, ohlc))
     #intraday
     st.subheader(f'Intraday Data for {symbol}')
-    col_td, col_ohlc = st.beta_columns(2)
+    col_td, col_ohlc = st.columns(2)
     td = col_td.selectbox('Pick Intraday Timedelta',('1min', '5min', '15min', '1hour', '4hour'))
 
     st.write(plotly_graphs.intra_day_graph(fmp_key,symbol,td, ohlc))
