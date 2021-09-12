@@ -140,6 +140,7 @@ if option == 'News':
         url = f"https://financialmodelingprep.com/api/v3/stock_news?tickers={symbol}&limit={slider_num}&apikey={fmp_key}"
         resp = requests.get(url)
         news = resp.json()
+        print(news)
         for n in news[0:slider_num]:
             st.markdown('------------------')
             st.markdown(f"**{n['site']}**")
