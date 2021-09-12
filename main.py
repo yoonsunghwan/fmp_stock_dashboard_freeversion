@@ -10,8 +10,8 @@ import screener
 #from .. import get_news
 st.set_page_config(page_title='Stock Dashboard', layout='wide', initial_sidebar_state="expanded")
 
-config = configparser.ConfigParser()
-config.read('ak.cfg')
+#config = configparser.ConfigParser()
+#config.read('ak.cfg')
 
 #change if running from my computer
 #fmp_key = config.get('access_key','FMP_ACCESS_KEY')
