@@ -7,7 +7,7 @@ from dataframes import daily_adjusted_df
 from datetime import datetime, timedelta
 from .. import screener
 #import configparser
-from ../sentiments import get_news
+#from .. import get_news
 st.set_page_config(page_title='Stock Dashboard', layout='wide', initial_sidebar_state="expanded")
 
 config = configparser.ConfigParser()
