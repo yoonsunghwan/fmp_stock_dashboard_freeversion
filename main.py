@@ -1,13 +1,13 @@
 import streamlit as st
-import plotly_graphs
+from .. import plotly_graphs
 import requests
 import pandas as pd
 import fmpsdk
 from dataframes import daily_adjusted_df
 from datetime import datetime, timedelta
-import screener
-import configparser
-from sentiments import get_news
+from .. import screener
+#import configparser
+from ../sentiments import get_news
 st.set_page_config(page_title='Stock Dashboard', layout='wide', initial_sidebar_state="expanded")
 
 config = configparser.ConfigParser()
