@@ -5,7 +5,7 @@ import pandas as pd
 import fmpsdk
 from dataframes import daily_adjusted_df
 from datetime import datetime, timedelta
-from . import screener
+import screener
 #import configparser
 #from .. import get_news
 st.set_page_config(page_title='Stock Dashboard', layout='wide', initial_sidebar_state="expanded")
