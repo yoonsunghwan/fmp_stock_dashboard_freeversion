@@ -1,5 +1,5 @@
 import streamlit as st
-from main import plotly_graphs
+import plotly_graphs
 import requests
 import pandas as pd
 import fmpsdk
