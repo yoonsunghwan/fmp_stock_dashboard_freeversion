@@ -8,3 +8,4 @@ plotly==5.0.0
 streamlit==0.88.0
 fmpsdk==20201229.0
 pystan==2.19.1.1
+pytrends==4.7.3
