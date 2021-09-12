@@ -4,12 +4,10 @@ anaconda-client==1.7.2
 anaconda-navigator==1.9.12
 anaconda-project==0.8.3
 fbprophet==0.7.1
-matplotlib @ file:///tmp/build/80754af9/matplotlib-base_1592846008246/work
 mccabe==0.6.1
 numba==0.50.1
 numexpr==2.7.1
 numpy==1.18.5
-pandas @ file:///tmp/build/80754af9/pandas_1592841659173/work
 pandas-datareader==0.9.0
 pandas-market-calendars==1.6.1
 pandocfilters==1.4.2
