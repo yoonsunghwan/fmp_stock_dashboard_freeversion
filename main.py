@@ -184,6 +184,6 @@ if option == 'Forecasting':
     except:
         st.write("please type in the number of days")
 
-    with st.beta_expander(f"Click to see daily prices for {comp_prof['companyName']} from its IPO date"):
+    with st.expander(f"Click to see daily prices for {comp_prof['companyName']} from its IPO date"):
         st.plotly_chart(plotly_graphs.daily_graph(daily_adjusted_df(fmp_key, symbol,ohlc, start=None, end=None), symbol, ohlc))
 
